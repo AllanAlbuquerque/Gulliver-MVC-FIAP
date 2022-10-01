@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #557663 #cad9c3;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #cad9c3;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #557663;
+  border-radius: 20px;
+  border: 2px double #3b5446;
+}
+
+/*--footer--*/
+.rodape {
+  height: 80px;
+}
+
+body {
+  background-color: #d4e1ce;
+}
+
+::selection {
+  background: #4c6356ad;
+  color: rgb(255, 255, 255);
+}
+
+
+/*--  boostrap --*/
+:root {
+  --blue: #425d9e;
+  /*! Gulliver Paleta -- SAN MARINO */
+  --green: #557663;
+  /*! Gulliver Paleta -- BASE COLOR DARK-GREEN CYAN */
+  --cyan: #2d97a1;
+  /*! Gulliver Paleta -- CYAN TONE */
+  --primary: #557663;
+  /*! Gulliver Paleta -- BASE COLOR DARK-GREEN CYAN */
+  --secondary: #cad9c3;
+  /*! Gulliver Paleta -- LIGHT SHADE OF GREEN */
+  --success: #557663;
+  /*! Gulliver Paleta -- BASE COLOR DARK-GREEN CYAN */
+  --primary-shadow: #2b3d32;
+  --light: #edecd5;
+  /*! Gulliver Paleta -- LIGHT SHADE OF YELLOW */
+  --bs-link-color: #557663;
+  /*! Gulliver Paleta -- BASE COLOR DARK-GREEN CYAN */
+  --bs-link-hover-color: #27362d;
+  /*! Gulliver Paleta -- SOMBRA PARA COLOR DARK-GREEN CYAN */
+  --bs-primary-rgb: 85, 118, 99;
+  /*! Gulliver Paleta -- LIGHT SHADE OF GREEN */
+  --btn-facebook: #4753bf;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  background: #2DA193;
+background: linear-gradient(to right, #2DA193 0%, #557663 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+footer {
+  color: rgb(27, 27, 27);
+  font-weight: 500;
+  background-color: #557663d5;
+  filter: opacity(70%);
+  margin-top: 6rem !important;
+}
+
+h5 {
+  color: rgb(55, 55, 55);
+}
+
+
+.restaurante_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  background-image: url(./img/restaurante.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: -10% !important;
+  filter: opacity(100%);
+}
+
+.form {
+  max-width: 750px;
+  width: 100%;
+}
+
+input {
+  height: 65px;
+}
+
+.local {
+  max-width: 450px;
+  width: 100%;
+}
+
+.date {
+  max-width: 200px;
+  width: 100%;
+}
+
+.btn_search {
+  width: 60px !important;
+  height: 50px !important;
+  background-color: transparent;
+}
+
+.hoteis-body {
+  margin: 5%;
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.hotel-image {
+  height: 709px;
+  margin-right: 3.9rem;
+}
+
+.hotel-image img {
+  height: 100%;
+  object-fit: fill;
+  width: 100%;
+  filter:opacity(60%);
+}
+
+.card {
+  height: 100% !important;
+}
+
+.card-footer {
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+#entretenimento .card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.splide__slide .card .card-img {
+  height: 185px;
+}
+
+
+h2 {
+  margin-top: 5rem;
+  color: #2d97a1;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h3 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #474747;
+}
+
+
+@media screen and (max-width: 768px) {
+  .restaurante_header {
+    background-position: center;
+  }
+
+  .form {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
